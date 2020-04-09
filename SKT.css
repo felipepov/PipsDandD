@@ -1,0 +1,138 @@
+/* For all pages */
+
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+header{
+  text-align:center;
+  background-color:black;
+  color:white;
+  padding:5px;
+}
+
+footer{
+  text-align: center;
+  font-size:12px;
+}
+
+/* For SKT-index */
+
+.container-1{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: stretch;
+  align-items: flex-start;
+}
+
+.container-1 div{
+  border:1px darkblue solid;
+  background-color: lightblue;
+  padding:1em;
+  text-align: center;
+
+  }
+
+  .box-1{
+     flex:2 1 auto;
+     order:1;
+   }
+
+   .box-2{
+     flex:1 1 auto;
+     order:2;
+   }
+
+   .box-3{
+     flex:1 1 auto;
+     order:3;
+   }
+
+
+/* For SKT-summaries */
+
+.container-2{
+display:flex;
+flex-flow: column wrap;
+}
+
+ul {list-style-type: none;}
+
+.calendar{
+
+}
+
+.month {
+  padding: 50px 25px;
+  width: 100%;
+  background: darkgrey;
+  text-align: center;
+}
+
+.month ul {
+  margin: 0;
+  padding: 0;
+}
+
+.month ul li {
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.month .prev {
+  float: left;
+  padding-top: 10px;
+}
+
+.month .next {
+  float: right;
+  padding-top: 10px;
+}
+
+.days {
+  padding: 20px 0;
+  background: #eee;
+  margin: 0;
+}
+
+.days li {
+  list-style-type: none;
+  display: inline-block;
+  width: 9.2%;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size:12px;
+  color: #7777;
+}
+
+li details p {
+   width: auto;
+   padding: 15px;
+   text-align: justify;
+   display: block;
+   position: absolute;
+   background-color: grey;
+   color: white;
+}
+
+/* For SKT-summaries */
+
+  #character-Table table {
+  border-collapse: collapse;
+  }
+
+  table, th, td {
+  border: 1px solid black;
+  height: 50px;
+  padding: 2em;
+  }
+
+   td {
+     text-align: center;
+   }
+
+/* For SKT-characters */
+
+.alignment{
+
+}
