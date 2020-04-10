@@ -1,19 +1,45 @@
+
 const textChange=function(){
-  table=document.getElementById("character-table").innerHTML;
-  if(table.indexOf("Good" || "Lawful" ||"Chaotic" || "Evil" || "Neutral")>-1){
-    table=table.replace("Good", "<span style='color:green'>Good</span>");
-    table=table.replace("Chaotic", "<span style='color:coral'>Chaotic</span>");
-    table=table.replace("Evil", "<span style='color:red'>Evil</span>");
-    table=table.replace("Lawful", "<span style='color:brown'>Lawful</span>");
-    table=table.replace("Neutral", "<span style='color:LightGrey'>Neutral</span>");
-  }
-  document.getElementById("character-table").innerHTML=table
+  eviltextChange()
+  goodtextChange()
+  neutraltextChange()
+  lawfultextChange()
+  chaotictextChange()
 }
+var eviltextChange=function() { 
+  var x = document.getElementsByClassName("evil"); 
+  for (var i = 0; i < x.length; i++) { 
+      x[i].style.color = "red"; 
+  } 
+} 
 
-console.log(document.querySelectorAll('.alignment'))
-const items = document.querySelectorAll('.item');
-items.forEach((item) => console.log(item));
+var goodtextChange=function() { 
+  var x = document.getElementsByClassName("good"); 
+  for (var i = 0; i < x.length; i++) { 
+      x[i].style.color = "green"; 
+  } 
+} 
 
+var neutraltextChange=function() { 
+  var x = document.getElementsByClassName("neutral"); 
+  for (var i = 0; i < x.length; i++) { 
+      x[i].style.display = "none"; 
+  } 
+} 
+
+var lawfultextChange=function() { 
+  var x = document.getElementsByClassName("lawful"); 
+  for (var i = 0; i < x.length; i++) { 
+      x[i].style.fontWeight = "bold"; 
+  } 
+} 
+
+ var chaotictextChange=function() { 
+   var x = document.getElementsByClassName("chaotic"); 
+  for (var i = 0; i < x.length; i++) { 
+       x[i].style.fontStyle = "italic"; 
+   } 
+ } 
 /*/ MANIPULATING THE DOM
 const ul = document.querySelector('.items');
 // ul.remove();

@@ -16,9 +16,10 @@
 <header>
 
 </header>
-<body onload="textChange()">
+<body>
 <script src="SKT.js"></script>
   <!-- Character Tables -->
+  <button onclick="textChange()">Color alignments</button> 
   <div>
     <table id="character-table">
     <thead>
@@ -36,7 +37,7 @@
     <tbody>
       <tr>
         <td>Gragem Partetrigos</td>
-        <td class="item">Neutral Good</td>
+        <td><span class="neutral"> Neutral</span> <span class="good">Good</span> </td>
         <td>Half-Ogre</td>
         <td>Half-Human</td>
         <td>Fighter</td>
@@ -46,7 +47,7 @@
       </tr>
       <tr>
         <td>Cronus Azucenath</td>
-        <td class="item">Lawful Evil</td>
+        <td><span class="lawful">Lawful</span> <span class="evil">Evil</span></td>
         <td colspan="2">Triton</td>
         <td>Paladin</td>
         <td>Oath of Conquest</td>
@@ -55,7 +56,7 @@
       </tr>
       <tr>
         <td>Osmund Arcanskald</td>
-        <td class="item">Lawful Good</td>
+        <td><span class="lawful">Lawful</span> <span class="good">Good</span></td>
         <td>Dwarf</td>
         <td>Moutain</td>
         <td>Wizard</td>
@@ -65,7 +66,7 @@
       </tr>
       <tr>
         <td>Jasper Pequebueno</td>
-        <td class="item">Chaotic Good</td>
+        <td><span class="chaotic">Chaotic</span> <span class="good">Good</span></td>
         <td>Hafling</td>
         <td>Lightfoot</td>
         <td>Sorcerer</td>
@@ -74,8 +75,8 @@
         <td><input type="number" name="level" value="1" max="20"></td>
       </tr>
       <tr>
-        <td></td>
-        <td class="item"></td>
+        <td>Whisky, en una Botella</td>
+        <td><span class="chaotic">Chaotic</span> <span class="neutral">Neutral</span</td>
         <td colspan="2">Tabaxi</td>
         <td>Rogue</td>
         <td>Thief</td>
@@ -88,7 +89,7 @@
 <footer>
   <p>&copy All Rights Reserved
     <br>
-    Pip Inc.
+    github.com/pip-po
   </p>
 </footer>
 </body>
