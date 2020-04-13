@@ -1,5 +1,4 @@
 
-
 // COLOR ALIGNMENTS
 const textChange = function () {
   eviltextChange()
@@ -7,7 +6,6 @@ const textChange = function () {
   neutraltextChange()
   lawfultextChange()
   chaotictextChange()
-
 }
 var eviltextChange = function () {
   var x = document.getElementsByClassName("Evil");
@@ -121,12 +119,6 @@ function sortNumberColumn(sort, columnName) {
   tableData = tableData.sort((c1, c2) => {
     return sort ? c1[columnName] - c2[columnName] : c2[columnName] - c1[columnName]
   });
-}
-var neutraltextChange = function () {
-  var x = document.getElementsByClassName("Neutral");
-  for (var i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
 }
 var lawfultextChange = function () {
   var x = document.getElementsByClassName("Lawful");
@@ -243,6 +235,19 @@ var neutraltextChange=function() {
       x[i].style.display = "none"; 
   } 
 } 
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
