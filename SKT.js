@@ -1,4 +1,5 @@
 
+
 // COLOR ALIGNMENTS
 const textChange = function () {
   eviltextChange()
@@ -6,6 +7,7 @@ const textChange = function () {
   neutraltextChange()
   lawfultextChange()
   chaotictextChange()
+
 }
 var eviltextChange = function () {
   var x = document.getElementsByClassName("Evil");
@@ -120,6 +122,26 @@ function sortNumberColumn(sort, columnName) {
     return sort ? c1[columnName] - c2[columnName] : c2[columnName] - c1[columnName]
   });
 }
+var eviltextChange=function() { 
+  var x = document.getElementsByClassName("evil"); 
+  for (var i = 0; i < x.length; i++) { 
+      x[i].style.color = "red"; 
+  } 
+} 
+
+var goodtextChange=function() { 
+  var x = document.getElementsByClassName("good"); 
+  for (var i = 0; i < x.length; i++) { 
+      x[i].style.color = "green"; 
+  } 
+} 
+
+var neutraltextChange=function() { 
+  var x = document.getElementsByClassName("neutral"); 
+  for (var i = 0; i < x.length; i++) { 
+      x[i].style.display = "none"; 
+  } 
+} 
 
 
 
@@ -128,13 +150,12 @@ function sortNumberColumn(sort, columnName) {
 
 
 
-
-
-
-
-
-
-
+ var chaotictextChange=function() { 
+   var x = document.getElementsByClassName("chaotic"); 
+  for (var i = 0; i < x.length; i++) { 
+       x[i].style.fontStyle = "italic"; 
+   } 
+ } 
 /*/ MANIPULATING THE DOM
 const ul = document.querySelector('.items');
 // ul.remove();
