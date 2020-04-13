@@ -6,12 +6,6 @@
   <meta name="keywords" content="Storm King's Thunder, Pip">
   <link href="boostrap/bootstrap.css" rel="stylesheet">
    <link rel="stylesheet" href="SKT.css">
-<!-- test -->
-<style>
-.blue{
-    color:blue;
-}
-</style>
 </head>
 <header>
 
@@ -19,9 +13,12 @@
 <body>
 <script src="SKT.js"></script>
   <!-- Character Tables -->
-  <button onclick="textChange()">Color alignments</button> 
+  <button onclick="textChange()">Color alignments</button>
+  <button onclick="loadTableData(tableData)">Show NPCs</button> 
+  <button onclick="sortColumn('level')">Sort NPC levels</button>
+  <button onclick="createRow()">Add NPCs</button>
   <div>
-    <table id="character-table">
+    <table>
     <thead>
       <tr>
         <th>Full Name</th>
@@ -34,54 +31,54 @@
         <th>Current Level</th>
       </tr>
     </thead>
-    <tbody>
+    <tbody id="character-table">
       <tr>
         <td>Gragem Partetrigos</td>
-        <td><span class="neutral"> Neutral</span> <span class="good">Good</span> </td>
+        <td><span class="Neutral"> Neutral</span> <span class="Good">Good</span> </td>
         <td>Half-Ogre</td>
         <td>Half-Human</td>
         <td>Fighter</td>
         <td>Brawler</td>
         <td>Farmer</td>
-        <td><input type="number" name="level" value="1" max="20"></td>
+        <td>3</td>
       </tr>
       <tr>
         <td>Cronus Azucenath</td>
-        <td><span class="lawful">Lawful</span> <span class="evil">Evil</span></td>
+        <td><span class="Lawful">Lawful</span> <span class="Evil">Evil</span></td>
         <td colspan="2">Triton</td>
         <td>Paladin</td>
         <td>Oath of Conquest</td>
         <td>Pirate</td>
-        <td><input type="number" name="level" value="1" max="20"></td>
+        <td>5</td>
       </tr>
       <tr>
         <td>Osmund Arcanskald</td>
-        <td><span class="lawful">Lawful</span> <span class="good">Good</span></td>
+        <td><span class="Lawful">Lawful</span> <span class="Good">Good</span></td>
         <td>Dwarf</td>
         <td>Moutain</td>
         <td>Wizard</td>
         <td>School of Abjuration</td>
         <td>Mercenery Veteran</td>
-        <td><input type="number" name="level" value="1"max="20"></td>
+        <td>4</td>
       </tr>
       <tr>
         <td>Jasper Pequebueno</td>
-        <td><span class="chaotic">Chaotic</span> <span class="good">Good</span></td>
+        <td><span class="Chaotic">Chaotic</span> <span class="Good">Good</span></td>
         <td>Hafling</td>
         <td>Lightfoot</td>
         <td>Sorcerer</td>
         <td>Wild Magic</td>
         <td>Street Urchin</td>
-        <td><input type="number" name="level" value="1" max="20"></td>
+        <td>6</td>
       </tr>
       <tr>
         <td>Whisky, en una Botella</td>
-        <td><span class="chaotic">Chaotic</span> <span class="neutral">Neutral</span</td>
+        <td><span class="Chaotic">Chaotic</span> <span class="Neutral">Neutral</span</td>
         <td colspan="2">Tabaxi</td>
         <td>Rogue</td>
         <td>Thief</td>
         <td>Guild Merchant</td>
-        <td><input type="number" name="level" value="1" max="20"></td>
+        <td>9</td>
       </tr>
     </tbody>
   </table>

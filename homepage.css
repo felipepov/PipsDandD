@@ -2,38 +2,97 @@ body {
     background-image: url(HomeBg.png);
     background-position: center;
     background-attachment: fixed;
-    background-size: 1366px 768px;
-}
-
-/* Outer wrappers */
-body > div > *{
-    border: 10px double yellow;
+    background-size: cover;
     color: white;
 }
 
-/* Top and bottom components AND Middle inner-wrappers */
+
+/* body > div > *{
+    border: 5px double yellow;
+    color: white;
+}
 body > div > * > *{
-    border: 6px solid red;
+    border: 3px solid red;
     color: white;
 }
-
-/* Middle components */
 main > * > *{
     border: 2px solid green;
     color: white;
 }
-
-main > * > * > *{
-    border: 2px solid blue;
+header > * > * {
+    border: 1px solid blue;
     color: white;
 }
+header > * > * > *{
+    border: 2px dotted purple;
+    color: white;
+} */
+
+/* HEADER */
+/* logo */
+.row > h3{
+    padding-left: 0.5em;
+}
+.icon{
+    height: auto;
+    max-width: 3.5em;
+    padding-right: 0;
+}
+/* menu */
+.row > h4{
+    font-size: 1.5rem;
+    margin-top: 0.5em;
+}
+/* sidebar */
+.sidenav h5{
+    text-align: center;
+    color: red;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 1em;
+    padding-right: 0em;
+  }
+  
+.sidenav a {
+    padding: 0.5em 0.5em 0.5em 2em;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 0.5em;
+    font-size: 2em;
+    margin-left: 3em;
+  }
 
 
-
+/* main */
 .heading{
-    font: Italic 77px/107px Trebuchet;
+    font: Italic 5rem/7rem Trebuchet MS;
 }
 
 .subheading{
-    font: Italic 40px/47px Trebuchet MS;
+    font: Italic 2.5rem/3rem Trebuchet MS;
 }
+
+
+
