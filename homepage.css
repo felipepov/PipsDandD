@@ -1,13 +1,35 @@
 body {
-    background-image: url(HomeBg.png);
+    background-image: url(images/HomeBg.png);
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
     color: white;
+    margin: 0px;
 }
 
+.about-pip{
+    background-color: white;
+    color: black;
+    height: 100vmin;
+}
+.about-dnd{
+    background-color: grey;
+    color: black;
+    height: 100vmin;
+}
+.contact{
+    background-color: black;
+    color: white;
+    height: 100vmin; 
+}
 
-/* body > div > *{
+a {
+  color: inherit; 
+  text-decoration: inherit; 
+}
+
+/* 
+body > div > *{
     border: 5px double yellow;
     color: white;
 }
@@ -30,23 +52,50 @@ header > * > * > *{
 
 /* HEADER */
 /* logo */
-.row > h3{
+.row > h2{
     padding-left: 0.5em;
 }
-.icon{
+.logo{
     height: auto;
     max-width: 3.5em;
     padding-right: 0;
 }
 /* menu */
+@media only screen and (max-width: 1026px) {
+    .row > h4 {
+        display: none;
+    }
+    .row > span{
+        padding-top: 1em;
+    }
+}
+
 .row > h4{
     font-size: 1.5rem;
-    margin-top: 0.5em;
+    margin-top: 1em;
+}
+.row > span{
+    font-size:2em;
+    cursor:pointer;
+    margin-top: -0.5em;
+    margin-right: 1em;
 }
 /* sidebar */
+.icons img{
+    max-width: 2em;
+    max-height: 2em;
+}
+
+
 .sidenav h5{
     text-align: center;
     color: red;
+    font-size: 1em;
+}
+
+.sidenav p{
+    margin-right: 1em;
+    margin-bottom: 2em;
 }
 
 .sidenav {
@@ -63,7 +112,7 @@ header > * > * > *{
     padding-right: 0em;
   }
   
-.sidenav a {
+.sidenav > ol > li > a {
     padding: 0.5em 0.5em 0.5em 2em;
     text-decoration: none;
     font-size: 1.5rem;
@@ -72,7 +121,7 @@ header > * > * > *{
     transition: 0.3s;
   }
   
-  .sidenav a:hover {
+  .sidenav li a:hover {
     color: #f1f1f1;
   }
   
@@ -94,5 +143,26 @@ header > * > * > *{
     font: Italic 2.5rem/3rem Trebuchet MS;
 }
 
+/* sidebar */
+aside div{
+    background: rgba(0,0,0,.5);
+    padding-left: 1.5em;
+    padding-top: 1em;
+    padding-bottom: 1px;
+    margin-bottom: 0.5em;
+}
+aside h5{
+    font-size: 1em;
+    text-transform: uppercase;
+    color: white;
+    margin: 0;
+}
+aside p{
+    font-size:0.75em;
+}
 
+/* footer */
+footer span{
+    color: red;
+}
 
