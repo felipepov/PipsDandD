@@ -7,6 +7,51 @@ body {
     margin: 0px;
 }
 
+header{
+    height: 15vmin;
+}
+main{
+    height: 70vmin;
+}
+footer{
+    padding-top: 3em;
+    height: 15vmin;
+}
+
+@media only screen and (max-width: 1026px) {
+    footer{
+        padding-top: 5.5em;
+    }
+    .row > h4 {
+        display: none;
+    }
+    .row > span{
+        padding-top: 1em;
+    }
+}
+
+  
+.first-page{
+    background-color: white;
+    color: black;
+    height: 100vmin;
+}
+.mid-page{
+    background-color: #D5D5D5 ;
+    color: black;
+    height: 100vmin;
+}
+.last-page{
+    background-color: #191919;
+    color: white;
+    height: 100vmin; 
+}
+
+a {
+  color: inherit; 
+  text-decoration: inherit; 
+}
+
 .about-pip{
     background-color: white;
     color: black;
@@ -61,14 +106,7 @@ header > * > * > *{
     padding-right: 0;
 }
 /* menu */
-@media only screen and (max-width: 1026px) {
-    .row > h4 {
-        display: none;
-    }
-    .row > span{
-        padding-top: 1em;
-    }
-}
+
 
 .row > h4{
     font-size: 1.5rem;
