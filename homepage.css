@@ -52,8 +52,29 @@ a {
   text-decoration: inherit; 
 }
 
+.about-pip{
+    background-color: white;
+    color: black;
+    height: 100vmin;
+}
+.about-dnd{
+    background-color: grey;
+    color: black;
+    height: 100vmin;
+}
+.contact{
+    background-color: black;
+    color: white;
+    height: 100vmin; 
+}
 
-/* body > div > *{
+a {
+  color: inherit; 
+  text-decoration: inherit; 
+}
+
+/* 
+body > div > *{
     border: 5px double yellow;
     color: white;
 }
