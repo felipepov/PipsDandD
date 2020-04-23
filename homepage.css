@@ -7,18 +7,42 @@ body {
     margin: 0px;
 }
 
-.about-pip{
+header{
+    height: 15vmin;
+}
+main{
+    height: 70vmin;
+}
+footer{
+    padding-top: 3em;
+    height: 15vmin;
+}
+
+@media only screen and (max-width: 1026px) {
+    footer{
+        padding-top: 5.5em;
+    }
+    .row > h4 {
+        display: none;
+    }
+    .row > span{
+        padding-top: 1em;
+    }
+}
+
+  
+.first-page{
     background-color: white;
     color: black;
     height: 100vmin;
 }
-.about-dnd{
-    background-color: grey;
+.mid-page{
+    background-color: #D5D5D5 ;
     color: black;
     height: 100vmin;
 }
-.contact{
-    background-color: black;
+.last-page{
+    background-color: #191919;
     color: white;
     height: 100vmin; 
 }
@@ -28,8 +52,8 @@ a {
   text-decoration: inherit; 
 }
 
-/* 
-body > div > *{
+
+/* body > div > *{
     border: 5px double yellow;
     color: white;
 }
@@ -61,14 +85,7 @@ header > * > * > *{
     padding-right: 0;
 }
 /* menu */
-@media only screen and (max-width: 1026px) {
-    .row > h4 {
-        display: none;
-    }
-    .row > span{
-        padding-top: 1em;
-    }
-}
+
 
 .row > h4{
     font-size: 1.5rem;

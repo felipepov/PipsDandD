@@ -9,7 +9,7 @@
 </head>
 
 <body>
-  <div class="container-fluid">
+  <div class="container-fluid top-page">
     <header class="row justify-content-between">
       <div class="col-3">
         <div class="row align-items-center">
@@ -26,8 +26,8 @@
           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
           <h5>Pip-Po</h5>
           <ol type="I">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Campaña</a></li>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="campaign.html">Campaña</a></li>
             <li><a href="#">Ideas</a></li>
             <li><a href="#">Contactate</a></li>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut perspiciatis similique error inventore
@@ -65,7 +65,7 @@
         </div>
       </aside>
     </main>
-    <footer class="row justify-content-between" style="padding-top: 5em;">
+    <footer class="row justify-content-between">
       <div class="col-4 d-flex">
         <p>Follow us <span>&mdash;&mdash;&mdash;&mdash;</span>
           <a href="https://github.com/pip-po">Github</a>
@@ -73,13 +73,15 @@
           <a href="https://www.google.com/gmail/">Gmail</a></p>
       </div>
       <div class="col-3 icons d-flex justify-content-end">
-        <a href=""><img style="margin-right: 1em;" src="images/downicon.png" alt="Scroll"></a>
+        <a href="#about-pip"><img style="margin-right: 1em;" src="images/downicon.png" alt="Scroll"></a>
       </div>
     </footer>
   </div>
-  <div class="about-pip"></div>
-  <div class="about-dnd"></div>
-  <div class="contact"></div>
+  <div id="about-pip" class="first-page"></div>
+  <div class="mid-page"></div>
+  <div class="last-page"></div>
+
+
 
   <script>
     function openNav() {
