@@ -1,0 +1,15 @@
+body {
+    background-image: url(images/IdeasBg.png);
+  }
+  
+  .color{
+    color: green;
+  }
+  
+  .sidenav h5{
+    color: green;
+  }
+  
+  aside h5::before{
+  background-color: green;
+  }

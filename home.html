@@ -5,22 +5,22 @@
   <meta charset="utf-8">
   <link rel="stylesheet" type="text/css" href="boostrap/bootstrap-grid.css">
   <link rel="stylesheet" type="text/css" href="homepage.css">
-  <title></title>
+  <title>Pip's Home Page</title>
 </head>
 
 <body>
   <div class="container-fluid top-page">
     <header class="row justify-content-between">
       <div class="col-3">
-        <div class="row align-items-center">
-          <img src="images/pippoicon.jpg" alt="Github-Pip-Po-icon" class="logo col-7">
-          <h2 class="col-5">Pip-Po</h2>
+        <div class="row align-items-center move">
+          <img src="images/pippoicon.jpg" alt="Github-Pip-Po-icon" class="logo">
+          <h2 class="col">Pip-Po</h2>
         </div>
       </div>
       <div class="col-3">
         <div class="row justify-content-end align-items-center">
-          <h4 class="col-3">Menu</h4>
-          <span class="col-2" onclick="openNav()">&#9776;</span>
+          <h4 class="menutext">Menu</h4>
+          <div class="menucontainer"><span class="menubar" onclick="openNav()">&#9776;</span></div>
         </div>
         <div id="mySidenav" class="sidenav">
           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -28,7 +28,7 @@
           <ol type="I">
             <li><a href="home.html">Home</a></li>
             <li><a href="campaign.html">Campaña</a></li>
-            <li><a href="#">Ideas</a></li>
+            <li><a href="ideas.html">Ideas</a></li>
             <li><a href="#">Contactate</a></li>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut perspiciatis similique error inventore
               pariatur, omnis ad maxime iste qui aperiam nihil quasi, dolorem quas dicta dignissimos.</p>
@@ -42,32 +42,34 @@
       </div>
     </header>
     <main class="row justify-content-between align-items-center">
-      <div class="col-9 align-items-start">
+      <div class="col-9">
+        <div class="col-10"></div>
         <div class="row-6">
           <h1 class="heading">Saludos adventureros, esto es D&D con Pip.</h1>
         </div>
         <div class="row-6">
+          <span class="color">&mdash;&mdash;&mdash;&mdash;</span>
           <h2 class="subheading">Un lugar para aprender sobre el famoso juego de rol, Dungeons and Dragons</h2>
         </div>
       </div>
-      <aside class="col-2">
+      <aside class="col-2 fix">
         <div>
-          <h5 class="row">Acerca del Autor</h5>
-          <p class="row">¿Quien es Pip?</p>
+          <h5 class="row fix">&nbsp Acerca del Autor</h5>
+          <p class="row fix">¿Quien es Pip?</p>
         </div>
         <div>
-          <h5 class="row">Sobre el juego</h5>
-          <p class="row">¿Que es D&D?</p>
+          <h5 class="row fix">&nbsp Sobre el juego</h5>
+          <p class="row fix">¿Que es D&D?</p>
         </div>
         <div>
-          <h5 class="row">Contactate</h5>
-          <p class="row">Dudas, pedidos y + info</p>
+          <h5 class="row fix">&nbsp Contactate</h5>
+          <p class="row fix">Dudas, pedidos y + info</p>
         </div>
       </aside>
     </main>
     <footer class="row justify-content-between">
       <div class="col-4 d-flex">
-        <p>Follow us <span>&mdash;&mdash;&mdash;&mdash;</span>
+        <p>&nbsp; Follow us <span class="color">&mdash;&mdash;&mdash;&mdash;</span>
           <a href="https://github.com/pip-po">Github</a>
           <a href="https://www.instagram.com/felipe_povina/">Instagram</a>
           <a href="https://www.google.com/gmail/">Gmail</a></p>
@@ -77,10 +79,31 @@
       </div>
     </footer>
   </div>
-  <div id="about-pip" class="first-page"></div>
-  <div class="mid-page"></div>
-  <div class="last-page"></div>
-
+  <div class="first-page container-fluid">
+    <header class="row align-items-center">
+      <p class="color intro col-2">/ ¿Quien es Pip?</p>
+    </header>
+    <main class="row justify-content-center align-items-start">
+      <h1 class="col-9 heading2">Soy un estudiante de secundaria apasionado por aprender sobre la programación y el
+        diseño.</h1>
+    </main>
+  </div>
+  <div class="mid-page container-fluid">
+    <header class="row align-items-center">
+      <p class="color intro col-2">/ ¿Que es D&D?</p>
+    </header>
+    <main class="row justify-content-center align-items-start">
+      <h1 class="col-9 heading2">Lorem ipsum dolor sit amet consectetur.</h1>
+    </main>
+  </div>
+  <div class="last-page container-fluid">
+    <header class="row align-items-center">
+      <p class="color intro col-2">/ Dudas, pedidos y mas info</p>
+    </header>
+    <main class="row justify-content-center align-items-start">
+      <h1 class="col-9 heading2">Lorem ipsum dolor sit.</h1>
+    </main>
+  </div>
 
   <script>
     function openNav() {
