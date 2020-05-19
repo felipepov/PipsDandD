@@ -88,55 +88,6 @@ function sortNumberColumn(sort, columnName) {
     return sort ? c1[columnName] - c2[columnName] : c2[columnName] - c1[columnName]
   });
 }
-<<<<<<< HEAD
-var lawfultextChange = function () {
-  var x = document.getElementsByClassName("Lawful");
-  for (var i = 0; i < x.length; i++) {
-    x[i].style.fontWeight = "bold";
-  }
-}
-var chaotictextChange = function () {
-  var x = document.getElementsByClassName("Chaotic");
-  for (var i = 0; i < x.length; i++) {
-    x[i].style.fontStyle = "italic";
-  }
-} 
-
-
-
-// ADD NPC TABLE
-let sortDirection = false;
-let tableData = [
-  {
-    name: 'Mogunar', alignment1: 'Lawful', alignment2: ' Evil', race: 'Half-Orc', subrace: '' , class: 'Barbarian', subclass: 'Path of the Bear',
-    background: 'Outlander', level: 3
-  },
-  {
-    name: 'Zephyros', alignment1: 'Neutral', alignment2: ' Good',race: 'Giant' ,  subrace: 'Cloud' , class: 'Wizard', subclass: ' ',
-    background: 'Hermit', level: 12
-  },
-  {
-    name: 'Tharkus Gromm', alignment1: 'Neutral', alignment2: 'Evil', race: 'Dwarf' ,  subrace: 'Moutain' , class: 'Rogue', subclass: ' ',
-    background: 'Guild Merchant', level: 1
-  },
-];
-
-function loadTableData(tableData) {
-  const tableBody = document.getElementById('character-table');
-  let dataHtml = ''
-
-
-  for (let data of tableData) {
-    dataHtml += `<tr><td>${data.name}</td><td><span class="${data.alignment1}">${data.alignment1}</span>
-    <span class="${data.alignment2}">${data.alignment2}</span>
-    </td><td>${data.race}</td><td>${data.subrace}</td>
-    <td>${data.class}</td><td>${data.subclass}</td><td>${data.background}</td><td>${data.level}</td></tr>`;
-    
-  }
-  tableBody.innerHTML = dataHtml;
-}
-=======
->>>>>>> 7a9684e663ccf63f342e3665b55db0cc5db67594
 
 // TRYING TO ADD ROW DIRECTLY TO MAIN TABLE
 const createRow = function () {
@@ -164,46 +115,6 @@ function createRow3(){
 }
 
 
-<<<<<<< HEAD
-
-
-
-
-
-
-
-
-
-
-
-
-
- var chaotictextChange=function() { 
-   var x = document.getElementsByClassName("chaotic"); 
-  for (var i = 0; i < x.length; i++) { 
-       x[i].style.fontStyle = "italic"; 
-   } 
- } 
-/*/ MANIPULATING THE DOM
-const ul = document.querySelector('.items');
-// ul.remove();
-// ul.lastElementChild.remove();
-ul.firstElementChild.textContent = 'Hello';
-ul.children[1].innerText = 'Brad';
-ul.lastElementChild.innerHTML = '<h1>Hello</h1>';
-
-const btn = document.querySelector('.btn');
-// btn.style.background = 'red';
-/* OBJECT LITERALS
-const person = {
-  firstName: 'John',
-  age: 30,
-  hobbies: ['music', 'movies', 'sports'],
-  address: {
-    street: '50 Main st',
-    city: 'Boston',
-    state: 'MA'
-=======
 // Constructor Function
 class Character {
   constructor(firstName, lastName, race) {
@@ -211,7 +122,6 @@ class Character {
     this.firstName = firstName
     this.lastName = lastName
     this.race = race
->>>>>>> 7a9684e663ccf63f342e3665b55db0cc5db67594
   }
   // Get Full Name
   getFullName() {
