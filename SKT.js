@@ -1,5 +1,4 @@
 
-
 // COLOR ALIGNMENTS
 const textChange = function () {
   eviltextChange()
@@ -7,7 +6,6 @@ const textChange = function () {
   neutraltextChange()
   lawfultextChange()
   chaotictextChange()
-
 }
 var eviltextChange = function () {
   var x = document.getElementsByClassName("Evil");
@@ -41,7 +39,6 @@ var chaotictextChange = function () {
 } 
 
 
-
 // ADD NPC TABLE
 let sortDirection = false;
 let tableData = [
@@ -74,37 +71,6 @@ function loadTableData(tableData) {
   tableBody.innerHTML = dataHtml;
 }
 
-// TRYING TO ADD ROW DIRECTLY TO MAIN TABLE
-const createRow = function () {
-  createRow1()
-  createRow2()
-  createRow3()
-}
-
-function createRow1(){
-const tableBody = document.getElementById('character-table');
-const row = tableBody.insertRow(-1);
-var data = Object.values(tableData[0])
-var cell1 = row.insertCell(0);
-cell1.innerHTML = data[0];
-}
-function createRow2(){
-  const tableBody = document.getElementById('character-table');
-  const row = tableBody.insertRow(-1);
-  var data = Array.from(tableData[1])
-  var cell1 = row.insertCell(0);
-  cell1.innerHTML = `${data.name}`;
-}
-function createRow3(){
-  const tableBody = document.getElementById('character-table');
-  const row = tableBody.insertRow(-1);
-  var data = Object.values(tableData[2])
-  var cell1 = row.insertCell(0);
-  cell1.innerHTML = data[0];
-  }
-
-
-
 // SORT LEVELS
 function sortColumn(columnName) {
   const dataType = typeof tableData[0][columnName];
@@ -122,12 +88,7 @@ function sortNumberColumn(sort, columnName) {
     return sort ? c1[columnName] - c2[columnName] : c2[columnName] - c1[columnName]
   });
 }
-var neutraltextChange = function () {
-  var x = document.getElementsByClassName("Neutral");
-  for (var i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-}
+<<<<<<< HEAD
 var lawfultextChange = function () {
   var x = document.getElementsByClassName("Lawful");
   for (var i = 0; i < x.length; i++) {
@@ -174,6 +135,8 @@ function loadTableData(tableData) {
   }
   tableBody.innerHTML = dataHtml;
 }
+=======
+>>>>>>> 7a9684e663ccf63f342e3665b55db0cc5db67594
 
 // TRYING TO ADD ROW DIRECTLY TO MAIN TABLE
 const createRow = function () {
@@ -181,68 +144,31 @@ const createRow = function () {
   createRow2()
   createRow3()
 }
-
 function createRow1(){
 const tableBody = document.getElementById('character-table');
 const row = tableBody.insertRow(-1);
-var data = Object.values(tableData[0])
 var cell1 = row.insertCell(0);
-cell1.innerHTML = data[0];
+cell1.innerHTML = tableData[0].name;
 }
 function createRow2(){
   const tableBody = document.getElementById('character-table');
   const row = tableBody.insertRow(-1);
-  var data = Array.from(tableData[1])
   var cell1 = row.insertCell(0);
-  cell1.innerHTML = `${data.name}`;
+  cell1.innerHTML = tableData[1].name;
 }
 function createRow3(){
   const tableBody = document.getElementById('character-table');
   const row = tableBody.insertRow(-1);
-  var data = Object.values(tableData[2])
   var cell1 = row.insertCell(0);
-  cell1.innerHTML = data[0];
-  }
-
-
-
-// SORT LEVELS
-function sortColumn(columnName) {
-  const dataType = typeof tableData[0][columnName];
-  sortDirection = !sortDirection;
-
-  switch(dataType) {
-    case 'number':
-      sortNumberColumn(sortDirection, columnName);
-      break;
-  }
-  loadTableData(tableData);
+  cell1.innerHTML = tableData[2].name;
 }
-function sortNumberColumn(sort, columnName) {
-  tableData = tableData.sort((c1, c2) => {
-    return sort ? c1[columnName] - c2[columnName] : c2[columnName] - c1[columnName]
-  });
-}
-var eviltextChange=function() { 
-  var x = document.getElementsByClassName("evil"); 
-  for (var i = 0; i < x.length; i++) { 
-      x[i].style.color = "red"; 
-  } 
-} 
 
-var goodtextChange=function() { 
-  var x = document.getElementsByClassName("good"); 
-  for (var i = 0; i < x.length; i++) { 
-      x[i].style.color = "green"; 
-  } 
-} 
 
-var neutraltextChange=function() { 
-  var x = document.getElementsByClassName("neutral"); 
-  for (var i = 0; i < x.length; i++) { 
-      x[i].style.display = "none"; 
-  } 
-} 
+<<<<<<< HEAD
+
+
+
+
 
 
 
@@ -277,52 +203,20 @@ const person = {
     street: '50 Main st',
     city: 'Boston',
     state: 'MA'
-  }
-}
-
-// Get single value
-console.log(person.name)
-
-// Get array value
-console.log(person.hobbies[1]);
-
-// Get embedded object
-console.log(person.address.city);
-*/
-/*
-// Array of objects
-const todos = [
-  {
-    id: 1,
-    text: 'Take out trash',
-    isComplete: false
-  },
-  {
-    id: 2,
-    text: 'Dinner with wife',
-    isComplete: false
-  },
-  {
-    id: 3,
-    text: 'Meeting with boss',
-    isComplete: true
-  }
-];
-
-// Get specific object value
-console.log(todos[1].text);
-*/
-
+=======
 // Constructor Function
-function Character(firstName, lastName, race) {
-  // Set object properties
-  this.firstName = firstName;
-  this.lastName = lastName;
-  this.race = race;
-}
-// Get Full Name
-Character.prototype.getFullName = function() {
-  return `${this.firstName} ${this.lastName}`
+class Character {
+  constructor(firstName, lastName, race) {
+    // Set object properties
+    this.firstName = firstName
+    this.lastName = lastName
+    this.race = race
+>>>>>>> 7a9684e663ccf63f342e3665b55db0cc5db67594
+  }
+  // Get Full Name
+  getFullName() {
+    return `${this.firstName} ${this.lastName}`
+  }
 }
 
 // Instantiate an object from the class

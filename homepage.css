@@ -1,52 +1,139 @@
 body {
-    background-image: url(HomeBg.png);
-    background-position: center;
+    background-image: url(images/HomeBg.png);
+    background-position: right;
     background-attachment: fixed;
     background-size: cover;
     color: white;
+    margin: 0px;
+    overflow-x: hidden;
 }
 
+header{
+    height: 15vmin;
+}
+main{
+    height: 70vmin;
+}
+footer{
+    padding-top: 3em;
+    height: 15vmin;
+}
 
-/* body > div > *{
-    border: 5px double yellow;
-    color: white;
+@media only screen and (max-width: 1026px) {
+    footer{
+        padding-top: 5.5em;
+    }
+    .row > h4 {
+        display: none;
+    }
 }
-body > div > * > *{
-    border: 3px solid red;
-    color: white;
+
+@media only screen and (min-width: 1026px){
+    .heading{
+        position: absolute;
+        top: -15rem;
+        left: 6rem;
+    }
+    .subheading{
+        position: absolute;
+        top: 1rem;
+        left: 10rem;
+    }
+    main .color{
+        position: absolute;
+        top: 3.5rem;
+        left: 5rem;
+    }
 }
-main > * > *{
-    border: 2px solid green;
-    color: white;
+
+/* PAGES */
+.top-page{
+    padding: 0px;
 }
-header > * > * {
-    border: 1px solid blue;
-    color: white;
+
+.first-page{
+    background-color: white;
+    color: black;
+    height: 100vmin;
 }
-header > * > * > *{
-    border: 2px dotted purple;
+.mid-page{
+    background-color: #D5D5D5 ;
+    color: black;
+    height: 100vmin;
+}
+.last-page{
+    background-color: #191919;
     color: white;
-} */
+    height: 100vmin; 
+}
+
+a {
+  color: inherit; 
+  text-decoration: inherit; 
+}
 
 /* HEADER */
-/* logo */
-.row > h3{
-    padding-left: 0.5em;
+/* top */
+.intro{
+    font: bold 100% Trebuchet;
+    text-transform: uppercase;
 }
-.icon{
+
+.move{
+    position:absolute;
+    left:2em;
+}
+
+.row > h2{
+    padding-left: 0.5em;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.logo{
     height: auto;
-    max-width: 3.5em;
+    max-width: 2.5em;
     padding-right: 0;
+    border-radius: 50%;
 }
 /* menu */
-.row > h4{
-    font-size: 1.5rem;
-    margin-top: 0.5em;
+.menutext{
+    position: absolute;
+    right: 3.5em;
+    font: bold 1.5rem Trebuchet;
+    top: -0.25rem;
 }
+.menubar{
+    position: fixed;
+    font-size:2em;
+    cursor:pointer;
+    top: 0.5em;
+    right: 1em;
+}
+.menucontainer{
+    position: fixed;
+    top: 1.225rem;
+    right: 1.65rem;
+    height: 2.5em;
+    width: 2.55em;
+    background-color: black;
+    border-radius: 20%;
+}
+
 /* sidebar */
+.icons img{
+    max-width: 2em;
+    max-height: 2em;
+}
+
+
 .sidenav h5{
     text-align: center;
     color: red;
+    font-size: 1em;
+}
+
+.sidenav p{
+    margin-right: 1em;
+    margin-bottom: 2em;
 }
 
 .sidenav {
@@ -63,7 +150,7 @@ header > * > * > *{
     padding-right: 0em;
   }
   
-.sidenav a {
+.sidenav > ol > li > a {
     padding: 0.5em 0.5em 0.5em 2em;
     text-decoration: none;
     font-size: 1.5rem;
@@ -72,7 +159,7 @@ header > * > * > *{
     transition: 0.3s;
   }
   
-  .sidenav a:hover {
+  .sidenav li a:hover {
     color: #f1f1f1;
   }
   
@@ -84,15 +171,54 @@ header > * > * > *{
     margin-left: 3em;
   }
 
-
-/* main */
+/* MAIN */
+/* headings */
 .heading{
     font: Italic 5rem/7rem Trebuchet MS;
 }
 
-.subheading{
-    font: Italic 2.5rem/3rem Trebuchet MS;
+.heading2{
+    font:  3rem/5rem Trebuchet;
 }
 
+.subheading{
+    font: Italic 2rem/2.5rem Trebuchet MS;
+}
 
+/* sidebar */
+aside.col-2{
+    padding-right: 0px;
+}
+.fix{
+    margin-right: 0px;
+}
 
+aside div{
+    background: rgba(0,0,0,.5);
+    padding-left: 1.5em;
+    padding-top: 1em;
+    padding-bottom: 1px;
+    margin-bottom: 0.5em;
+}
+aside h5{
+    font-size: 1em;
+    text-transform: uppercase;
+    color: white;
+    margin: 0;
+}
+aside h5::before{
+    content: '';
+  width: 0.75em;
+  height: 0.75em;
+  border-radius: 0.5em;
+  background-color: red;
+}
+
+aside p{
+    font-size:0.75em;
+}
+
+/* footer */
+.color{
+    color: red;
+}
