@@ -16,24 +16,29 @@ background-color: #003CFF;
 
 .wrapper0{
   display:grid;
+  width: 100vw;
+  height: 100vh;
   grid-template-columns: 0.5fr 1.5fr 3fr 0.5fr;
   grid-template-rows: 0.25fr 0.60fr 1.5fr 1.5fr 0.25fr;
 }
 
 .wrapper1{
   display:grid;
+  width: 100vw;
+  height: 100vh;
   grid-template-columns: 0.5fr 1.5fr 2.25fr 2.25fr 1.5fr 0.5fr;
   grid-template-rows: 0.25fr 0.60fr 1.5fr 1.5fr 0.25fr;
 }
 
 .wrapper2{
   display:grid;
+  width: 100vw;
+  height: 100vh;
   grid-template-columns: 0.5fr repeat(4, 1.5fr) 0.5fr;
   grid-template-rows: 0.25fr 0.60fr 1.5fr 1.5fr 0.25fr;
 }
 
 .wrapper0 > div, .wrapper1 > div, .wrapper2 > div, .wrapper3 > div{
-  background:#eee;
   padding:1em;
   border: solid black 1px;
 }
