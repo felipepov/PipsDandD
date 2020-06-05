@@ -40,7 +40,9 @@ background-color: #003CFF;
 
 .wrapper0 > div, .wrapper1 > div, .wrapper2 > div, .wrapper3 > div{
   padding:1em;
-  border: solid black 1px;
+}
+.wrapper0 > div, .wrapper1 > div, .wrapper2 > div{
+ border: solid black 1px;
 }
 
 .box-1, .box1, .box11{

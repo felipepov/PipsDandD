@@ -1,5 +1,6 @@
 body {
     background-image: url(images/IdeasBg.png);
+    background-position: center;
   }
   
   .color{
@@ -19,7 +20,7 @@ body {
     grid-auto-rows:minmax(100px, auto);
     height: 100vh;
     grid-template-columns: 0.125fr 0.5fr 0.5fr 3fr 0.75fr 0.75fr;
-    grid-template-rows: 0.5fr 1fr repeat(3, 1.25fr) 2.75fr 0.5fr;
+    grid-template-rows: 0.5fr 1fr repeat(3, 1.25fr) 2.25fr 0.5fr;
 }
 
 .box31{
@@ -45,7 +46,7 @@ body {
   display: flex;
 }
 .box33{
-  align-content: start;
+  align-self: center;
   grid-column:3/5;
   grid-row: 3/5;
 }
@@ -53,7 +54,7 @@ body {
   font: Italic 4rem/6rem Trebuchet MS;
 }
 .subheading{
-  font: Italic 1rem/1.5rem Trebuchet MS;
+  font: Italic 1.25rem/1.75rem Trebuchet MS;
 }
 @media only screen and (min-width: 1026px){
   .heading, .subheading{
@@ -62,19 +63,19 @@ body {
 }
 
 .box34{
-  align-self: start;
+  align-self: center;
   justify-self: center;
   grid-column:3;
   grid-row: 5;
 }
 .box35{
-  align-self: start;
+  align-self: center;
   grid-column:4;
   grid-row: 5;
 }
 .box36{
   align-self: start;
-  justify-self: end;
+  justify-self: stretch;
   grid-column:6;
   grid-row: 3;
   background: rgba(0,0,0,.5);
@@ -85,7 +86,7 @@ body {
 }
 .box37{
   align-self: center;
-  justify-self: end;
+  justify-self: stretch;
   grid-column:6;
   grid-row: 4;
   background: rgba(0,0,0,.5);
@@ -96,7 +97,7 @@ body {
 }
 .box38{
   align-self: end;
-  justify-self: end;
+  justify-self: stretch;
   grid-column:6;
   grid-row: 5;
   background: rgba(0,0,0,.5);
@@ -105,14 +106,60 @@ body {
   padding-bottom: 1px;
   margin-bottom: 0.5em;
 }
+div h5{
+  font-size: 1em;
+  text-transform: uppercase;
+  color: white;
+  margin: 0;
+}
+div .dot{
+height: 0.75em;
+width: 0.75em;
+background-color: green;
+border-radius: 50%;
+display: inline-block;
+margin-right: 5px;
+}
+
+.p{
+  font-size:0.75em;
+}
+.flex{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:space-evenly;
+}
+.flex0{
+ justify-self: start;
+ text-align: center;
+ color: green;
+ font-size: 1em;
+ /* border: solid white 1px; */
+}
+.flex1{
+  /* border: solid white 1px; */
+}
+.flex2{
+  text-align: center;
+  /* border: solid white 1px; */
+}
+.flex3{
+  /* border: solid white 1px; */
+}
+
+
 .box39{
-  align-self: start;
+  align-self: end;
   justify-self: start;
   grid-column:2/5;
   grid-row: 7;
 }
+div.box39{
+  padding-bottom: 0.5em;
+}
 .box40{
-  align-self: start;
+  align-self: end;
   justify-self: end;
   grid-column:6;
   grid-row: 7;

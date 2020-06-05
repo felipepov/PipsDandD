@@ -18,24 +18,43 @@
     <div class="box32">
       <h4 class="menutext">Menu</h4>
       <div class="menucontainer"><span class="menubar" onclick="openNav()">&#9776;</span></div>
+      <div id="mySidenav" class="sidenav flex">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <h5 class="flex0">Pip-Po</h5>
+        <ol type="I" class="flex1">
+          <li><a class="sidelink" href="index.html">Home</a></li>
+          <li><a class="sidelink" href="campaign.html">Campaña</a></li>
+          <li><a class="sidelink" href="ideas.html">Ideas</a></li>
+          <li><a class="sidelink" href="#">Contactate</a></li>
+        </ol>
+        <p class="sidep flex2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut perspiciatis similique
+          error
+          inventore
+          pariatur, omnis ad maxime iste qui aperiam nihil quasi, dolorem quas dicta dignissimos.</p>
+        <div class="icons flex3">
+          <a href="https://github.com/pip-po"><img src="images/githubicon.png" alt="Github"></a>
+          <a href="https://www.instagram.com/felipe_povina/"><img src="images/instagramicon.png" alt="Instagram"></a>
+          <a href="https://www.google.com/gmail/"><img src="images/gmailicon.png" alt="Gmail"></a>
+        </div>
+      </div>
     </div>
     <div class="box33">
       <h1 class="heading">Descubre ideas magnificas para D&D</h1>
     </div>
-    <div class="box34 color">&mdash;</div>
+    <div class="box34 color">&mdash;&mdash;&mdash;&mdash;</div>
     <div class="box35 subheading">Podras explorar las ideas e invenciones que se nos ha ocurrido a medida que jugabamos
       al juego</div>
     <div class="box36">
-      <h5>Sobre la campaña</h5>
-      <p>¿De que se trata?</p>
+      <h5> <span class="dot"></span> Sobre la campaña</h5>
+      <p class="p">¿De que se trata?</p>
     </div>
     <div class="box37">
-      <h5>Resumenes</h5>
-      <p>¿Que paso hasta ahora?</p>
+      <h5><span class="dot"></span>Resumenes</h5>
+      <p class="p">¿Que paso hasta ahora?</p>
     </div>
     <div class="box38">
-      <h5>Indice</h5>
-      <p>Todo sobre SKT</p>
+      <h5><span class="dot"></span>Indice</h5>
+      <p class="p"> Todo sobre SKT</p>
     </div>
     <div class="box39">
       <p>Seguinos <span class="color">&mdash;&mdash;&mdash;&mdash;</span>
@@ -48,7 +67,15 @@
   <div class="first-page"></div>
   <div class="mid-page"></div>
   <div class="last-page"></div>
+  <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "15.5rem";
+    }
 
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+  </script>
 </body>
 
 </html>

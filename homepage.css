@@ -124,14 +124,13 @@ a {
     max-height: 2em;
 }
 
-
-.sidenav h5{
+.sideheading{
     text-align: center;
     color: red;
     font-size: 1em;
 }
 
-.sidenav p{
+.sidep{
     margin-right: 1em;
     margin-bottom: 2em;
 }
@@ -150,16 +149,16 @@ a {
     padding-right: 0em;
   }
   
-.sidenav > ol > li > a {
+.sidelink {
     padding: 0.5em 0.5em 0.5em 2em;
     text-decoration: none;
     font-size: 1.5rem;
     color: #818181;
     display: block;
     transition: 0.3s;
-  }
+}
   
-  .sidenav li a:hover {
+  .sidenavlink:hover {
     color: #f1f1f1;
   }
   
