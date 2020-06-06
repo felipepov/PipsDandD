@@ -1,9 +1,29 @@
+@media (max-width : 1500px) {
+  html{
+    font-size: 16px;
+    }
+}
+
+@media (min-width : 768px) and (max-width : 1024px) {
+  html{
+    font-size: 22px;
+    }
+  .box36, .box37, .box38, .flex , .menutext{
+    font-size: 1.5em;
+  }
+  .box39, .box31{
+    font-size: 1.35em;
+  }
+}
+
+
+
 body {
     background-image: url(images/IdeasBg.png);
     background-position: center;
-  }
+ }
   
-  .color{
+.color{
     color: green;
   }
   
@@ -47,14 +67,14 @@ body {
 }
 .box33{
   align-self: center;
-  grid-column:3/5;
+  grid-column:3/6;
   grid-row: 3/5;
 }
 .heading{
-  font: Italic 4rem/6rem Trebuchet MS;
+  font: Italic 4.5rem/6.5rem Trebuchet MS;
 }
 .subheading{
-  font: Italic 1.25rem/1.75rem Trebuchet MS;
+  font: Italic 1.75rem/2.25rem Trebuchet MS;
 }
 @media only screen and (min-width: 1026px){
   .heading, .subheading{
@@ -74,7 +94,7 @@ body {
   grid-row: 5;
 }
 .box36{
-  align-self: start;
+  align-self: end;
   justify-self: stretch;
   grid-column:6;
   grid-row: 3;
@@ -96,7 +116,7 @@ body {
   margin-bottom: 0.5em;
 }
 .box38{
-  align-self: end;
+  align-self: start;
   justify-self: stretch;
   grid-column:6;
   grid-row: 5;
