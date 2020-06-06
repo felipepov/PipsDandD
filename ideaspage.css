@@ -20,8 +20,7 @@
 
 body {
     background-image: url(images/IdeasBg.png);
-    background-position: center;
- }
+}
   
 .color{
     color: green;
@@ -29,10 +28,6 @@ body {
   
   .sidenav h5{
     color: green;
-  }
-  
-  aside h5::before{
-  background-color: green;
   }
 
 .wrapper3{
@@ -155,24 +150,16 @@ margin-right: 5px;
  text-align: center;
  color: green;
  font-size: 1em;
- /* border: solid white 1px; */
-}
-.flex1{
-  /* border: solid white 1px; */
 }
 .flex2{
   text-align: center;
-  /* border: solid white 1px; */
-}
-.flex3{
-  /* border: solid white 1px; */
 }
 
 
 .box39{
   align-self: end;
   justify-self: start;
-  grid-column:2/5;
+  grid-column:2/6;
   grid-row: 7;
 }
 div.box39{
