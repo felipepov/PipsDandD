@@ -1,4 +1,5 @@
 
+
 // COLOR ALIGNMENTS
 const textChange = function () {
   eviltextChange()
@@ -36,22 +37,22 @@ var chaotictextChange = function () {
   for (var i = 0; i < x.length; i++) {
     x[i].style.fontStyle = "italic";
   }
-} 
+}
 
 
 // ADD NPC TABLE
 let sortDirection = false;
 let tableData = [
   {
-    name: 'Mogunar', alignment1: 'Lawful', alignment2: ' Evil', race: 'Half-Orc', subrace: '' , class: 'Barbarian', subclass: 'Path of the Bear',
+    name: 'Mogunar', alignment1: 'Lawful', alignment2: ' Evil', race: 'Half-Orc', subrace: '', class: 'Barbarian', subclass: 'Path of the Bear',
     background: 'Outlander', level: 3
   },
   {
-    name: 'Zephyros', alignment1: 'Neutral', alignment2: ' Good',race: 'Giant' ,  subrace: 'Cloud' , class: 'Wizard', subclass: ' ',
+    name: 'Zephyros', alignment1: 'Neutral', alignment2: ' Good', race: 'Giant', subrace: 'Cloud', class: 'Wizard', subclass: ' ',
     background: 'Hermit', level: 12
   },
   {
-    name: 'Tharkus Gromm', alignment1: 'Neutral', alignment2: 'Evil', race: 'Dwarf' ,  subrace: 'Moutain' , class: 'Rogue', subclass: ' ',
+    name: 'Tharkus Gromm', alignment1: 'Neutral', alignment2: 'Evil', race: 'Dwarf', subrace: 'Moutain', class: 'Rogue', subclass: ' ',
     background: 'Guild Merchant', level: 1
   },
 ];
@@ -66,7 +67,7 @@ function loadTableData(tableData) {
     <span class="${data.alignment2}">${data.alignment2}</span>
     </td><td>${data.race}</td><td>${data.subrace}</td>
     <td>${data.class}</td><td>${data.subclass}</td><td>${data.background}</td><td>${data.level}</td></tr>`;
-    
+
   }
   tableBody.innerHTML = dataHtml;
 }
@@ -76,7 +77,7 @@ function sortColumn(columnName) {
   const dataType = typeof tableData[0][columnName];
   sortDirection = !sortDirection;
 
-  switch(dataType) {
+  switch (dataType) {
     case 'number':
       sortNumberColumn(sortDirection, columnName);
       break;
@@ -95,19 +96,19 @@ const createRow = function () {
   createRow2()
   createRow3()
 }
-function createRow1(){
-const tableBody = document.getElementById('character-table');
-const row = tableBody.insertRow(-1);
-var cell1 = row.insertCell(0);
-cell1.innerHTML = tableData[0].name;
+function createRow1() {
+  const tableBody = document.getElementById('character-table');
+  const row = tableBody.insertRow(-1);
+  var cell1 = row.insertCell(0);
+  cell1.innerHTML = tableData[0].name;
 }
-function createRow2(){
+function createRow2() {
   const tableBody = document.getElementById('character-table');
   const row = tableBody.insertRow(-1);
   var cell1 = row.insertCell(0);
   cell1.innerHTML = tableData[1].name;
 }
-function createRow3(){
+function createRow3() {
   const tableBody = document.getElementById('character-table');
   const row = tableBody.insertRow(-1);
   var cell1 = row.insertCell(0);
