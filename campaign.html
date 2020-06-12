@@ -4,7 +4,6 @@
 <head>
   <title>Pip's Storm King's Thunder Campaign</title>
   <meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
-  <link rel="stylesheet" type="text/css" href="boostrap/bootstrap-grid.css">
   <link rel="stylesheet" type="text/css" href="ideaspage.css">
   <link rel="stylesheet" type="text/css" href="homepage.css">
   <link rel="stylesheet" type="text/css" href="campaignpage.css">
@@ -81,9 +80,19 @@
     <div class="box2">
       <h1>La historia hasta ahora</h1>
     </div>
-    <div class="box3">El Mundo</div>
+    <div class="box3">
+      <h3>El Mundo</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Laboris nisi ut lorem ipsum.</p>
+    </div>
     <div class="box4">imagenes</div>
-    <div class="box5">El Tiempo</div>
+    <div class="box5">
+      <h3>El Tiempo</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Laboris nisi ut lorem ipsum.</p>
+    </div>
     <div class="box6">Mapa</div>
     <div class="box7">Calendario</div>
   </div>
@@ -94,8 +103,50 @@
     <div class="box12">
       <h1>Todos los elementos de la campaña</h1>
     </div>
-    <div class="box13">imagen1</div>
-    <div class="box14">imagen2</div>
+    <div class="box13">
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <img src="images/Ymir.jpg">
+          <div class="text">Ymir</div>
+        </div>
+        <div class="mySlides fade">
+          <img src="images/Dora.jpg">
+          <div class="text">Dora</div>
+        </div>
+        <div class="mySlides fade">
+          <img src="images/ThomasShelby.jpg">
+          <div class="text">Thomas Shelby</div>
+        </div>
+        <div class="mySlides fade">
+          <img src="images/47.jpg">
+          <div class="text">Ironeye 47</div>
+        </div>
+        <div class="mySlides fade">
+          <img src="images/Healing.jpg">
+          <div class="text">Healing Blaze</div>
+        </div>
+      </div>
+    </div>
+    <div class="box14">
+      <div class="slideshow-container">
+        <div class="mySlides2 fade">
+          <img src="images/Nighstone.jpg">
+          <div class="text">Nightstone</div>
+        </div>
+        <div class="mySlides2 fade">
+          <img src="images/ZephyrosTower.jpg">
+          <div class="text">Torre de Zephyros</div>
+        </div>
+        <div class="mySlides2 fade">
+          <img src="images/ByrnShander.jpg">
+          <div class="text">Bryn Shander</div>
+        </div>
+        <div class="mySlides2 fade">
+          <img src="images/Fireshear.png">
+          <div class="text">Fireshear</div>
+        </div>
+      </div>
+    </div>
     <div class="box15">imagen3</div>
     <div class="box16">imagen4</div>
     <div class="box17">imagen5</div>
@@ -108,12 +159,40 @@
 
 
   <script>
+    // Open menubar and close it
     function openNav() {
       document.getElementById("mySidenav").style.width = "15.5em";
     }
 
     function closeNav() {
       document.getElementById("mySidenav").style.width = "0";
+    }
+    // Slideshow
+    var slideIndex = 0;
+    showSlides();
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) { slideIndex = 1 }
+      slides[slideIndex - 1].style.display = "block";
+      setTimeout(showSlides, 2250); // Change image every 2 seconds
+    }
+    var slideIndex2 = 0;
+    showSlides2();
+    function showSlides2() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides2");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex2++;
+      if (slideIndex2 > slides.length) { slideIndex2 = 1 }
+      slides[slideIndex2 - 1].style.display = "block";
+      setTimeout(showSlides2, 2000); // Change image every 2 seconds
     }
   </script>
 

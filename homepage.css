@@ -15,17 +15,17 @@ body {
 .first-page{
     background-color: white;
     color: black;
-    height: 100vmin;
+    height: 100vh;
 }
 .mid-page{
     background-color: #D5D5D5 ;
     color: black;
-    height: 100vmin;
+    height: 100vh;
 }
 .last-page{
     background-color: #191919;
     color: white;
-    height: 100vmin; 
+    height: 100vh; 
 }
 
 a {
