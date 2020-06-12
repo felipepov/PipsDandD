@@ -70,9 +70,23 @@ div .dot{
   grid-column:2;
   grid-row: 3/5;
 }
-.box4{
+div.box4{
   grid-column:3/5;
   grid-row: 3/5;
+  max-width: 100%;
+  height: auto;
+  padding: 0px;
+}
+div.box4 img{
+  object-fit: cover;
+  width: 100%;
+  height: 28em;
+}
+@media (min-width : 768px) and (max-width : 1024px) {
+  div.box4 img{
+    height: 57.75em;
+    overflow: hidden;
+  }
 }
 .box5{
   grid-column:5/6;
@@ -83,12 +97,19 @@ div .dot{
   justify-self: start;
   grid-column: 3;
   grid-row: 4;
+  background-color: #d5d5d5;
+  border-top-right-radius: 25px;
+  position: relative;
+  font-size: 1.5rem;
 }
 .box7{
   align-self: start;
   justify-self: end;
   grid-column: 4;
   grid-row: 3;
+  background-color: #d5d5d5;
+  border-bottom-left-radius: 25px;
+  font-size: 1.5rem;
 }
 
 
@@ -99,29 +120,37 @@ div .dot{
 div.box13{
   grid-row: 3;
   grid-column:2;
-  padding:0px;
+  padding: 0px;
+  font-size: 20px;
 }
 /* Slideshow container */
 .slideshow-container {
-  max-width: 50%;
-  height:auto;
-  position: relative;
-  margin: auto;
-}
-.mySlides img, .mySlides2 img{
   max-width: 100%;
   height: auto;
+  position: relative;
+}
+.mySlides img, .mySlides2 img, .mySlides3 img, .mySlides4 img{
+  object-fit: cover;
+  width: 100%;
+  height: 16em;
+  object-position: center;
+}
+.mySlides img{
+  object-position: top;
 }
 /* Caption text */
 .text {
   color: #f2f2f2;
-  font-size: 1rem;
+  text-shadow: 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black;
+  font-size: 1em;
   padding: 0.5rem 0.75rem;
   position: absolute;
   bottom: 0.5rem;
+  right: 0.5rem;
   width: 100%;
   text-align: end;
 }
+
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
@@ -141,15 +170,28 @@ div.box13{
 div.box14{
   grid-row: 3;
   grid-column:3;
-  padding:0px;
+  padding: 0px;
+  font-size: 20px;
 }
-.box15{
+div.box15{
   grid-row: 3;
-  grid-column:4
+  grid-column:4;
+  padding: 0px;
+  font-size: 20px;
 }
-.box16{
+div.box16{
   grid-row: 3;
-  grid-column:5
+  grid-column:5;
+  padding: 0px;
+  font-size: 20px;
+}
+@media (min-width : 768px) and (max-width : 1024px) {
+  div.box13, div.box14, div.box15,div.box16{
+    font-size: 40px;
+  }
+  .text{
+    bottom:1.8em;
+  }
 }
 .box17{
   grid-row: 4;
@@ -159,25 +201,37 @@ div.box14{
   justify-self: start;
   align-self: end;
   grid-row: 3;
-  grid-column:2
+  grid-column:2;
+  background-color: #191919;
+  position: relative;
+  border-top-right-radius: 25px;
 }
 .box19{
   justify-self: start;
   align-self: end;
   grid-row: 3;
-  grid-column:3
+  grid-column:3;
+  background-color: #191919;
+  position: relative;
+  border-top-right-radius: 25px;
 }
 .box20{
   justify-self: start;
   align-self: end;
   grid-row: 3;
-  grid-column:4
+  grid-column:4;
+  background-color: #191919;
+  position: relative;
+  border-top-right-radius: 25px;
 }
 .box21{
   justify-self: start;
   align-self: end;
   grid-row: 3;
-  grid-column:5
+  grid-column:5;
+  background-color: #191919;
+  position: relative;
+  border-top-right-radius: 25px;
 }
 .box22{
   justify-self: start;

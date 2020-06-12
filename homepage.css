@@ -1,143 +1,143 @@
 body {
-    background-image: url(images/HomeBg1.png);
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
-    color: white;
-    margin: 0px;
+  background-image: url(images/HomeBg1.png);
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  color: white;
+  margin: 0px;
 }
 
 /* PAGES */
-.top-page{
-    padding: 0px;
+.top-page {
+  padding: 0px;
 }
 
-.first-page{
-    background-color: white;
-    color: black;
-    height: 100vh;
+.first-page {
+  background-color: white;
+  color: black;
+  height: 100vh;
 }
-.mid-page{
-    background-color: #D5D5D5 ;
-    color: black;
-    height: 100vh;
+.mid-page {
+  background-color: #d5d5d5;
+  color: black;
+  height: 100vh;
 }
-.last-page{
-    background-color: #191919;
-    color: white;
-    height: 100vh; 
+.last-page {
+  background-color: #191919;
+  color: white;
+  height: 100vh;
 }
 
 a {
-  color: inherit; 
-  text-decoration: inherit; 
+  color: inherit;
+  text-decoration: inherit;
 }
 
 /* HEADER */
 /* top */
-.intro{
-    font: bold 100% Trebuchet;
-    text-transform: uppercase;
+.intro {
+  font: bold 100% Trebuchet;
+  text-transform: uppercase;
 }
 
-.logo{
-    padding-right: 0;
-    border-radius: 50%;
+.logo {
+  padding-right: 0;
+  border-radius: 50%;
 }
 /* menu */
-.menutext{
-    position: absolute;
-    right: 3.5em;
-    font: bold 1.5rem Trebuchet;
-    top: -0.25rem;
+.menutext {
+  position: absolute;
+  right: 3.5em;
+  font: bold 1.5rem Trebuchet;
+  top: -0.25rem;
 }
-.menubar{
-    position: fixed;
-    font-size:2em;
-    cursor:pointer;
-    top: 0.5em;
-    right: 1em;
+.menubar {
+  position: fixed;
+  font-size: 2em;
+  cursor: pointer;
+  top: 0.5em;
+  right: 1em;
 }
-.menucontainer{
-    position: fixed;
-    top: 1.225rem;
-    right: 1.65rem;
-    height: 2.5em;
-    width: 2.55em;
-    background-color: black;
-    border-radius: 20%;
+.menucontainer {
+  position: fixed;
+  top: 1.225rem;
+  right: 1.65rem;
+  height: 2.5em;
+  width: 2.55em;
+  background-color: black;
+  border-radius: 20%;
 }
 
 /* sidebar */
-.icons img{
-    max-width: 2em;
-    max-height: 2em;
+.icons img {
+  max-width: 2em;
+  max-height: 2em;
 }
 
-.sideheading{
-    text-align: center;
-    color: red;
-    font-size: 1em;
+.sideheading {
+  text-align: center;
+  color: red;
+  font-size: 1em;
 }
 
-.sidep{
-    margin-right: 1em;
-    margin-bottom: 2em;
+.sidep {
+  margin-right: 1em;
+  margin-bottom: 2em;
 }
 
 .sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    right: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 1em;
-    padding-right: 0em;
-  }
-  
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 1em;
+  padding-right: 0em;
+}
+
 .sidelink {
-    padding: 0.5em 0.5em 0.5em 2em;
-    text-decoration: none;
-    font-size: 1.5em;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
+  padding: 0.5em 0.5em 0.5em 2em;
+  text-decoration: none;
+  font-size: 1.5em;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
 }
-  
+
 .sidelink:hover {
-    color: #f1f1f1;
+  color: #f1f1f1;
 }
-  
+
 .sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 0.5rem;
-    font-size: 2em;
-    margin-left: 3em;
+  position: absolute;
+  top: 0;
+  right: 0.5rem;
+  font-size: 2em;
+  margin-left: 3em;
 }
 
 /* MAIN */
 /* headings */
-.heading2{
-    font:  3rem/5rem Trebuchet;
+.heading2 {
+  font: 3rem/5rem Trebuchet;
 }
 /* colors */
-.flex0{
-    color: red;
-}
-  
-.sidenav h5{
-    color: red;
+.flex0 {
+  color: red;
 }
 
-div .dot{
-    background-color: red;
+.sidenav h5 {
+  color: red;
 }
 
-.color{
-    color: red;
+div .dot {
+  background-color: red;
+}
+
+.color {
+  color: red;
 }
