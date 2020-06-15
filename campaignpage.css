@@ -142,8 +142,6 @@ div.box4 img{
   div.box5{
     grid-column:5/7;
     font-size: 1.5rem;
-    justify-self: start;
-    padding-right:0px;
   }
 }
 .box6{
@@ -268,7 +266,7 @@ div.box16{
 }
 .box17 img{
   object-fit: cover;
-  width: 100%;
+  width: 102%;
   height: 100%;
 }
 .timeline2{
