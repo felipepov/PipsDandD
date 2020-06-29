@@ -1,93 +1,39 @@
 // COLOR ALIGNMENTS
 const textChange = function () {
-  eviltextChange();
-  goodtextChange();
-  neutraltextChange();
-  lawfultextChange();
-  chaotictextChange();
-};
-var eviltextChange = function () {
-  var x = document.getElementsByClassName("Evil");
-  for (var i = 0; i < x.length; i++) {
-    x[i].style.color = "red";
+  var alignmentClasses = document.querySelectorAll(
+    ".Good, .Chaotic, .Neutral, .Evil, .Lawful"
+  );
+  for (let i = 0; i < alignmentClasses.length; i++) {
+    if (alignmentClasses[i].textContent === "Good") {
+      alignmentClasses[i].style.color = "green";
+    } else if (alignmentClasses[i].textContent === "Chaotic") {
+      alignmentClasses[i].style.fontStyle = "italic";
+    } else if (alignmentClasses[i].textContent === "Evil") {
+      alignmentClasses[i].style.color = "red";
+    } else if (alignmentClasses[i].textContent === "Lawful") {
+      alignmentClasses[i].style.fontWeight = "bold";
+    } else if (alignmentClasses[i].textContent === "Neutral") {
+      alignmentClasses[i].style.color = "grey";
+    }
   }
 };
-var goodtextChange = function () {
-  var x = document.getElementsByClassName("Good");
-  for (var i = 0; i < x.length; i++) {
-    x[i].style.color = "green";
-  }
-};
-var neutraltextChange = function () {
-  var x = document.getElementsByClassName("Neutral");
-  for (var i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-};
-var lawfultextChange = function () {
-  var x = document.getElementsByClassName("Lawful");
-  for (var i = 0; i < x.length; i++) {
-    x[i].style.fontWeight = "bold";
-  }
-};
-var chaotictextChange = function () {
-  var x = document.getElementsByClassName("Chaotic");
-  for (var i = 0; i < x.length; i++) {
-    x[i].style.fontStyle = "italic";
-  }
-};
+
 
 // ADD NPC TABLE
-let sortDirection = false;
-let tableData = [
-  {
-    name: "Mogunar",
-    alignment1: "Lawful",
-    alignment2: " Evil",
-    race: "Half-Orc",
-    subrace: "",
-    class: "Barbarian",
-    subclass: "Path of the Bear",
-    background: "Outlander",
-    level: 3,
-  },
-  {
-    name: "Zephyros",
-    alignment1: "Neutral",
-    alignment2: " Good",
-    race: "Giant",
-    subrace: "Cloud",
-    class: "Wizard",
-    subclass: " ",
-    background: "Hermit",
-    level: 12,
-  },
-  {
-    name: "Tharkus Gromm",
-    alignment1: "Neutral",
-    alignment2: "Evil",
-    race: "Dwarf",
-    subrace: "Moutain",
-    class: "Rogue",
-    subclass: " ",
-    background: "Guild Merchant",
-    level: 1,
-  },
-];
-
-function loadTableData(tableData) {
-  const tableBody = document.getElementById("character-table");
-  let dataHtml = "";
-
-  for (let data of tableData) {
-    dataHtml += `<tr><td>${data.name}</td><td><span class="${data.alignment1}">${data.alignment1}</span>
-    <span class="${data.alignment2}">${data.alignment2}</span>
-    </td><td>${data.race}</td><td>${data.subrace}</td>
-    <td>${data.class}</td><td>${data.subclass}</td><td>${data.background}</td><td>${data.level}</td></tr>`;
-  }
-  tableBody.innerHTML = dataHtml;
+function Person(name, firstAlignment, secondAlignment, race, pClass, background, level) {
+  this.name = name;
+  this.alignment1 = firstAlignment;
+  this.alignment2 = secondAlignment;
+  this.race = race;
+  this.class = pClass;
+  this.background = background;
+  this.level = level
 }
+var Mogunar = new Person('Mogunar', 'Lawful', 'Evil', 'Half-Orc', 'Barbarian', 'Outlander', 3);
+var Zephyros = new Person('Zephyros', 'Neutral', 'Good', 'Cloud Giant', 'Wizard', 'Hermit', 12);
 
+
+/*
 // SORT LEVELS
 function sortColumn(columnName) {
   const dataType = typeof tableData[0][columnName];
@@ -107,6 +53,7 @@ function sortNumberColumn(sort, columnName) {
       : c2[columnName] - c1[columnName];
   });
 }
+
 
 // TRYING TO ADD ROW DIRECTLY TO MAIN TABLE
 const createRow = function () {
@@ -153,3 +100,4 @@ const character2 = new Character("Harshnag", "the Grim", "Giant");
 
 console.log(character2);
 console.log(character1.getFullName());
+*/
